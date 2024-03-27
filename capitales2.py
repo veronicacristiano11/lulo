@@ -200,7 +200,7 @@ capitales_del_mundo = [
 def obtenercapital(pais):
   for tupla in capitales_del_mundo :
     if tupla[0] == pais :
-      print("la capital de "+pais +" es "+tupla[1])
+      return("la capital de "+pais +" es "+tupla[1])
 
 #parametro:parametro es un dato que se necesita para que una fucion realize acciones
 

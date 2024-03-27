@@ -216,3 +216,17 @@ capitales_del_mundo = [
     ("Bahréin", "Manama")
 ]
 
+
+
+
+# Función para obtener la capital de un país
+def obtener_capital(pais):
+    for capital_tuple in capitales_del_mundo:
+        if capital_tuple[0] == pais:
+            return capital_tuple[1]
+    return "No se encontró la capital para ese país."
+
+# Ejemplo de uso
+pais = input("Ingrese el nombre de un país: ")
+capital = obtener_capital(pais)
+print(f"La capital de {pais} es: {capital}")

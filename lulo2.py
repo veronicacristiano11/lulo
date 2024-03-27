@@ -1,16 +1,19 @@
 from datetime import datetime as dt
-import Juegopiedrapapelotijera as jp
+#import Juegopiedrapapelotijera as jp
 import Lulo_traduccion as lt 
 import lulo_dinero as ld 
-import capitales as cp
+import capitales2 as cp
 
 import lulo_chiste as lch
 def chatbot ():
     print("\n")
     print("Hola me llamo Lulo y voy a ser tu nuevo ayudante para todo lo que me necesites preguntar")
     respuesta = input ("Escribe algo : ")
+
     if respuesta == ("Cual es tu edad ? "):
         print("Soy una IA no tengo edad")
+    elif "Hola" or "Hola" in respuesta:
+        print("Hola como estas? En que te puedo ayudar?")
     elif respuesta == ("De donde eres ? "):
         print("Colombia")
     elif respuesta == ("que dia es hoy?"):
@@ -68,28 +71,19 @@ def chatbot ():
     elif "chiste" in respuesta :
         lch.lulo_chistes()
         print(lch.lulo_chistes())
-    """elif "peso"or"dolar"in respuesta:
+    elif "peso"or"dolar"in respuesta:
         respuesta2 = input("escoge una opcion\n (1) de peso a dolar (2) de dolar a peso: ")
         if respuesta2 == "1":
            convertir2=int(input("que numero quieres convertir: "))
            ld.peso_dolar(convertir2)
-
         elif respuesta2 =="2":
           convertir =  int(input("que numero quieres convertir: "))
-          ld.dolar_a_peso(convertir)"""
-    """ elif "chiste" in respuesta :
+          ld.dolar_a_peso(convertir)
+    elif "chiste" in respuesta :
         lch.lulo_chistes()
-        print(lch.lulo_chistes())"""
-
-
-
-
-        
-        
-
-
-
-
+        print(lch.lulo_chistes())
+    else:
+        print("No te entendí, preguntame otra cosa")
 
 chatbot()
   

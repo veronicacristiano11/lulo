@@ -1,9 +1,10 @@
 from datetime import datetime as dt
-import Juegopiedrapapelotijera as jp
+#import Juegopiedrapapelotijera as jp
 import Lulo_traduccion as lt 
 import lulo_dinero as ld 
 
 import lulo_chiste as lch
+import capitales2 as cp
 def chatbot ():
     print("\n")
     print("Hola me llamo Lulo y voy a ser tu nuevo ayudante para todo lo que me necesites preguntar")
@@ -60,7 +61,7 @@ def chatbot ():
     elif"ingles" in respuesta :
         lt.traduccion(respuesta)
     #elif "recordar" in respuesta:
-        #lr.recordatorio(respuesta)
+        lr.recordatorio(respuesta)
     elif "chiste" in respuesta :
         lch.lulo_chistes()
         print(lch.lulo_chistes())
